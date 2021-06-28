@@ -7,6 +7,7 @@ import 'package:get_it/get_it.dart';
 
 // Services
 import '../services/http_service.dart';
+import '../services/movie_service.dart';
 
 // Model
 import '../models/app_config.dart';
@@ -45,6 +46,10 @@ class _SplashPageState extends State<SplashPage> {
 
     getIt.registerSingleton<HTTPService>(
       HTTPService(),
+    );
+
+    getIt.registerSingleton<MovieService>(
+      MovieService(),
     );
   }
 
