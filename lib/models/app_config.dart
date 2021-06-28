@@ -3,5 +3,9 @@ class AppConfig {
   final String? BASE_IMAGE_URL;
   final String? API_KEY;
 
-  AppConfig({this.BASE_API_URL, this.BASE_IMAGE_URL, this.API_KEY});
+  AppConfig({
+    required this.BASE_API_URL,
+    required this.BASE_IMAGE_URL,
+    required this.API_KEY,
+  });
 }

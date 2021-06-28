@@ -5,6 +5,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get_it/get_it.dart';
 
+// Services
+import '../services/http_service.dart';
+
 // Model
 import '../models/app_config.dart';
 
@@ -38,6 +41,10 @@ class _SplashPageState extends State<SplashPage> {
           BASE_API_URL: configData['BASE_API_URL'],
           BASE_IMAGE_URL: configData['BASE_IMAGE_URL'],
           API_KEY: configData['API_KEY']),
+    );
+
+    getIt.registerSingleton<HTTPService>(
+      HTTPService(),
     );
   }
 
