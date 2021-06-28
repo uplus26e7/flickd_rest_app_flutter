@@ -11,7 +11,7 @@ class MovieTile extends StatelessWidget {
   final double width;
   final Movie movie;
 
-  MovieTile({required this.movie, required this.height, required this.width})
+  MovieTile({required this.movie, required this.height, required this.width});
 
   @override
   Widget build(BuildContext context) {
@@ -48,18 +48,14 @@ class MovieTile extends StatelessWidget {
                   movie.name!,
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 22,
-                    fontWeight: FontWeight.w400
-                  ),
+                      color: Colors.white,
+                      fontSize: 22,
+                      fontWeight: FontWeight.w400),
                 ),
               ),
               Text(
                 movie.rating!.toString(),
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 22
-                ),
+                style: TextStyle(color: Colors.white, fontSize: 22),
               ),
             ],
           ),
@@ -79,7 +75,6 @@ class MovieTile extends StatelessWidget {
               style: TextStyle(color: Colors.white70, fontSize: 10),
             ),
           )
-          
         ],
       ),
     );
