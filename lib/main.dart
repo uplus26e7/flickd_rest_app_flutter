@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flickd',
+      debugShowCheckedModeBanner: false,
       initialRoute: 'home',
       routes: {
         'home': (BuildContext _context) => MainPage(),
